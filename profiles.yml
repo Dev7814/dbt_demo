@@ -1,13 +1,13 @@
 dbt_demo:
   outputs:
     dev:
-      account: jthgfgu/mg61909
+      type: snowflake
+      account: mg61909
+      user: dbt
+      password: dbtPassword123
+      role: TRANSFORM
       database: RAW
-      password: dbtpassword123
-      role: transform
+      warehouse: COMPUTE_WH
       schema: AIRBNB
       threads: 1
-      type: snowflake
-      user: DEV7814
-      warehouse: COMPUTE_WH
   target: dev
