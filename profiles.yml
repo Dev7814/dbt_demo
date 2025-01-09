@@ -2,10 +2,10 @@ dbt_demo:
   outputs:
     dev:
       type: snowflake
-      account: mg61909
+      account: jthgfgu-mg61909
       user: dbt
       password: dbtPassword123
-      role: TRANSFORM
+      role: transform
       database: RAW
       warehouse: COMPUTE_WH
       schema: AIRBNB
